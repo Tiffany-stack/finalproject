@@ -1,0 +1,8 @@
+[
+    { "date": "2024-06-01", "amount": 50, "category": "Groceries", "description": "Weekly grocery shopping" },
+    { "date": "2024-06-02", "amount": 30, "category": "Eating Out", "description": "Lunch with friends" },
+    { "date": "2024-06-03", "amount": 100, "category": "Shopping", "description": "New clothes" },
+    { "date": "2024-06-04", "amount": 20, "category": "Transportation", "description": "Bus fare" },
+    { "date": "2024-06-05", "amount": 80, "category": "Entertainment", "description": "Movie night" }
+  ]
+  

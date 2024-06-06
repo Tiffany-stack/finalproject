@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  #expenseForm {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  #expenseForm input,
+  #expenseForm button {
+    margin-right: 0.5rem;
+  }
+  
+  input[type="date"],
+  input[type="number"],
+  input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  
+  button[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .expense {
+    animation: fadeIn 0.5s ease-in-out 0.1s forwards, bounceIn 0.5s ease-in-out forwards;
+    /* Existing styles */
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Add animation keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Add animation keyframes */
+@keyframes confettiFall {
+    0% {
+      transform: translateY(-200px) rotate(0deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(600px) rotate(720deg);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply animations to cash elements */
+  .cash {
+    position: fixed;
+    z-index: 1000; /* Ensure cash appears on top */
+    opacity: 0;
+    font-size: 100px; /* Increased font size */
+    color: #00FF00; /* Green color for cash */
+    animation: confettiFall 5s ease forwards;
+  }
+  
+  
